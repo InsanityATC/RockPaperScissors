@@ -14,51 +14,50 @@ const playRound = (plyrChoice, CPUChoice) => {
     if (plyrChoice === CPUChoice)
     {
         const p = document.createElement('p');
-        p.innerText = 'You tied, you both chose ' + plyrChoice + '.';
+        p.innerText = 'You tied, you both chose ' + plyrChoice + '.\n' + 'Your Score: ' + plyrScore + '.\n AI Score: ' + CPUScore + '.';
         Results.appendChild(p);
     }
     else if (plyrChoice === "rock" && CPUChoice === "paper")
     {
         const p = document.createElement('p');
-        p.innerText = 'Your ' + plyrChoice + ' lost to ' + CPUChoice + '.';
-        Results.appendChild(p);
         CPUScore++;
-        console.log(plyrScore, CPUScore);
+        p.innerText = 'Your ' + plyrChoice + ' lost to ' + CPUChoice + '.\n' + 'Your Score: ' + plyrScore + '.\n AI Score: ' + CPUScore + '.';
+        Results.appendChild(p);
     }
     else if (plyrChoice === "rock" && CPUChoice === "scissors")
     {
         const p = document.createElement('p');
-        p.innerText = 'Your ' + plyrChoice + ' won against ' + CPUChoice + '.';
-        Results.appendChild(p);
         plyrScore++;
+        p.innerText = 'Your ' + plyrChoice + ' won against ' + CPUChoice + '.\n' + 'Your Score: ' + plyrScore + '.\n AI Score: ' + CPUScore + '.';
+        Results.appendChild(p);
     }
     else if (plyrChoice === "paper" && CPUChoice === "rock")
     {
         const p = document.createElement('p');
-        p.innerText = 'Your ' + plyrChoice + ' won against ' + CPUChoice + '.';
-        Results.appendChild(p);
         plyrScore++;
+        p.innerText = 'Your ' + plyrChoice + ' won against ' + CPUChoice + '.\n' + 'Your Score: ' + plyrScore + '.\n AI Score: ' + CPUScore + '.';
+        Results.appendChild(p);
     }
     else if (plyrChoice === "paper" && CPUChoice === "scissors")
     {
         const p = document.createElement('p');
-        p.innerText = 'Your ' + plyrChoice + ' lost to ' + CPUChoice + '.';
-        Results.appendChild(p);
         CPUScore++;
+        p.innerText = 'Your ' + plyrChoice + ' lost to ' + CPUChoice + '.\n' + 'Your Score: ' + plyrScore + '.\n AI Score: ' + CPUScore + '.';
+        Results.appendChild(p);
     }
     else if (plyrChoice === "scissors" && CPUChoice === "rock")
     {
         const p = document.createElement('p');
-        p.innerText = 'Your ' + plyrChoice + ' lost to ' + CPUChoice + '.';
-        Results.appendChild(p);
         CPUScore++;
+        p.innerText = 'Your ' + plyrChoice + ' lost to ' + CPUChoice + '.\n' + 'Your Score: ' + plyrScore + '.\n AI Score: ' + CPUScore + '.';
+        Results.appendChild(p);
     }
     else if (plyrChoice === "scissors" && CPUChoice === "paper")
     {
         const p = document.createElement('p');
-        p.innerText = 'Your ' + plyrChoice + ' won against ' + CPUChoice + '.';
-        Results.appendChild(p);
         plyrScore++;
+        p.innerText = 'Your ' + plyrChoice + ' won against ' + CPUChoice + '.\n' + 'Your Score: ' + plyrScore + '.\n AI Score: ' + CPUScore + '.';
+        Results.appendChild(p);
     }
 }
 
