@@ -1,3 +1,6 @@
+//Add running score after each play
+//Clear out results and winner if they choose to play again
+
 const rockBtn = document.querySelector('#rock');
 const paperBtn = document.querySelector('#paper');
 const scissorsBtn = document.querySelector('#scissors');
